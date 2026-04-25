@@ -1,0 +1,23 @@
+{
+  "name": "projeto-v6-atom-2026",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "node": "npx hardhat node",
+    "step1": "npx hardhat run scripts/step1.js --network localhost",
+    "step2": "npx hardhat run scripts/step2.js --network localhost",
+    "step3": "npx hardhat run scripts/step3.js --network localhost",
+    "step4": "npx hardhat run scripts/step4.js --network localhost",
+    "step5": "npx hardhat run scripts/step5.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "dotenv": "^16.6.1",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.16.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6"
+  }
+}
