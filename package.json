@@ -5,6 +5,7 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "node": "npx hardhat node",
+    "logs": "npx hardhat run scripts/logs.js --network localhost",
     "step1": "npx hardhat run scripts/step1.js --network localhost",
     "step2": "npx hardhat run scripts/step2.js --network localhost",
     "step3": "npx hardhat run scripts/step3.js --network localhost",
@@ -19,6 +20,8 @@
     "hardhat": "^2.16.0"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.9.6"
+    "@openzeppelin/contracts": "^4.9.6",
+    "@zeitnotbr/envjs": "^0.1.1",
+    "@zeitnotbr/hardhat-watch": "^0.1.1"
   }
 }

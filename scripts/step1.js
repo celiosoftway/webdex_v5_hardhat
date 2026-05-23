@@ -45,7 +45,8 @@ async function main() {
     await webdexFactory.deployed();
 
     console.log(`\n[CONTRACT] WEbdEXFactoryV5     -> ${webdexFactory.address} (Fábrica de Bots)`);
-    updateEnv('ADDR_WEBDEX_FACTORY', webdexFactory.address);
+    updateEnv('ADDR_LG_WEBDEX_FACTORY', webdexFactory.address);
+    updateEnv('ABI_LG_WEBDEX_FACTORY', "WEbdEXFactoryV5");
 
     // 2- WEbdEXStrategiesV5
     console.log("\n" + "=".repeat(85));
@@ -57,7 +58,8 @@ async function main() {
     await webdexstrategies.deployed();
 
     console.log(`\n[CONTRACT] WEbdEXStrategiesV5 -> ${webdexstrategies.address} (Gerenciador de Estratégias)`);
-    updateEnv('ADDR_WEBDEX_STRATEGIES', webdexstrategies.address);
+    updateEnv('ADDR_LG_WEBDEX_STRATEGIES', webdexstrategies.address);
+    updateEnv('ABI_LG_WEBDEX_STRATEGIES', "WEbdEXStrategiesV5");
 
     // 3 - WEbdEXSubAccountsV5
     console.log("\n" + "=".repeat(85));
@@ -69,7 +71,8 @@ async function main() {
     await webdexSubAccounts.deployed();
 
     console.log(`\n[CONTRACT] WEbdEXSubAccountsV5 -> ${webdexSubAccounts.address} (Gerenciador de Contas Subordinadas)`);
-    updateEnv('ADDR_WEBDEX_SUB_ACCOUNTS', webdexSubAccounts.address);
+    updateEnv('ADDR_LG_WEBDEX_SUB_ACCOUNTS', webdexSubAccounts.address);
+    updateEnv('ABI_LG_WEBDEX_SUB_ACCOUNTS', "WEbdEXSubAccountsV5");
 
     // 4 - WEbdEXPaymentsV5
     console.log("\n" + "=".repeat(85));
@@ -81,7 +84,8 @@ async function main() {
     await webdexPayments.deployed();
 
     console.log(`\n[CONTRACT] WEbdEXPaymentsV5 -> ${webdexPayments.address} (Gerenciador de Pagamentos)`);
-    updateEnv('ADDR_WEBDEX_PAYMENTS', webdexPayments.address);
+    updateEnv('ADDR_LG_WEBDEX_PAYMENTS', webdexPayments.address);
+    updateEnv('ABI_LG_WEBDEX_PAYMENTS', "WEbdEXPaymentsV5");
 
     // 5 - WEbdEXNetworkV5
     console.log("\n" + "=".repeat(85));
@@ -93,7 +97,8 @@ async function main() {
     await webdexNetwork.deployed();
 
     console.log(`\n[CONTRACT] WEbdEXNetworkV5 -> ${webdexNetwork.address} (Gerenciador de Rede)`);
-    updateEnv('ADDR_WEBDEX_NETWORK', webdexNetwork.address);
+    updateEnv('ADDR_LG_WEBDEX_NETWORK', webdexNetwork.address);
+    updateEnv('ABI_LG_WEBDEX_NETWORK', "WEbdEXNetworkV5");
 
     // 6 - WEbdEXManagerV5
     console.log("\n" + "=".repeat(85));
@@ -105,7 +110,8 @@ async function main() {
     await webdexManager.deployed();
 
     console.log(`\n[CONTRACT] WEbdEXManagerV5 -> ${webdexManager.address} (Gerenciador de Gerentes)`);
-    updateEnv('ADDR_WEBDEX_MANAGER', webdexManager.address);
+    updateEnv('ADDR_LG_WEBDEX_MANAGER', webdexManager.address);
+    updateEnv('ABI_LG_WEBDEX_MANAGER', "WEbdEXManagerV5");
 
     // 7 - Token pass webdex
     console.log("\n" + "=".repeat(85));
@@ -117,7 +123,8 @@ async function main() {
     await webdexToken.deployed();
 
     console.log(`\n[CONTRACT] WEbdEX -> ${webdexToken.address} (Token Principal)`);
-    updateEnv('ADDR_WEBDEX_TOKEN', webdexToken.address);
+    updateEnv('ADDR_LG_WEBDEX_TOKEN', webdexToken.address);
+    updateEnv('ABI_LG_WEBDEX_TOKEN', "WEbdEX");
 
     // 8 - MockUSDT
     console.log("\n" + "=".repeat(85));
@@ -129,7 +136,8 @@ async function main() {
     await mockUSDT.deployed();
 
     console.log(`\n[CONTRACT] MockUSDT -> ${mockUSDT.address} (Token de Teste)`);
-    updateEnv('ADDR_MOCK_USDT', mockUSDT.address);
+    updateEnv('ADDR_LG_MOCK_USDT', mockUSDT.address);
+    updateEnv('ABI_LG_MOCK_USDT', "MockUSDT");
 
 
     // 9 - inicia o ambiente
